@@ -1,25 +1,10 @@
-import { NextSeo } from 'next-seo';
+import Layout from './layout';
 
 const Home = () => {
   return (
-    <>
-      <NextSeo
-        title="我的应用程序"
-        description="这是一个示例应用程序"
-        twitter={{
-          cardType: 'summary_large_image',
-          site: '@seclink',
-        }}
-        openGraph={{
-          images: [
-            {
-              url: 'https://ppl-ai-public.s3.amazonaws.com/static/img/pplx-default-preview.png',
-            },
-          ],
-        }}
-      />
+    <Layout>
       <h1>Hello world</h1>
-    </>
+    </Layout>
   );
 };
 
